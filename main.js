@@ -16,7 +16,7 @@ mongoose.connect(process.env.MONGO_URI,{ useNewUrlParser: true, useUnifiedTopolo
 // Créer et enregistrer un enregistrement d'un modèle
 
 const createAndSavePerson = function(done) {
-  const sieKoffi = new Person({name: "Sie Koffi", age: 22, favoriteFoods: ["attiéké", "riz", "orange"]});
+  const sieKoffi = new Person({name: "Sie Koffi", age: 22, favoriteFoods: ["attiéké", "foutou", "orange"]});
 
   sieKoffi.save(function(err, data) {
     if (err) return console.error(err);
